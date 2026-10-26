@@ -1,0 +1,9 @@
+# Apache only. Not used by GitHub Pages or Netlify (use their own redirect settings).
+ErrorDocument 404 /404.html
+RewriteEngine On
+# Force HTTPS (enable once SSL is active)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+# Example permanent redirects from OLD urls (replace with real ones, avoid chains):
+# Redirect 301 /old-services.html /services.html
+# Redirect 301 /old-contact.html /contact.html

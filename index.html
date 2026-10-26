@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glow &amp; Grace Salon | Bridal Makeup &amp; Beauty (Demo)</title>
+    <meta
+      name="description"
+      content="Demo salon website with bridal makeup, hair and skin services, a PKR price list and WhatsApp booking."
+    />
+    <link
+      rel="canonical"
+      href="https://YOUR-USERNAME.github.io/glow-grace-salon/"
+    />
+    <meta
+      property="og:title"
+      content="Glow &amp; Grace Salon | Bridal Makeup &amp; Beauty (Demo)"
+    />
+    <meta
+      property="og:description"
+      content="Demo salon website with bridal makeup, hair and skin services, a PKR price list and WhatsApp booking."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://YOUR-USERNAME.github.io/glow-grace-salon/"
+    />
+    <meta
+      property="og:image"
+      content="https://YOUR-USERNAME.github.io/glow-grace-salon/assets/images/og-glow-grace-salon.png"
+    />
+    <meta property="og:site_name" content="Glow &amp; Grace Salon" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Glow &amp; Grace Salon | Bridal Makeup &amp; Beauty (Demo)"
+    />
+    <meta
+      name="twitter:description"
+      content="Demo salon website with bridal makeup, hair and skin services, a PKR price list and WhatsApp booking."
+    />
+    <meta
+      name="twitter:image"
+      content="https://YOUR-USERNAME.github.io/glow-grace-salon/assets/images/og-glow-grace-salon.png"
+    />
+    <!-- Google Search Console: paste your verification meta tag here, e.g. <meta name="google-site-verification" content="..."> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind Play CDN: for development and demos. For production, build CSS with the Tailwind CLI (see README). -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              plum: "#542344",
+              rose: "#C98291",
+              blush: "#F7E8EC",
+              ivory: "#FFF9F5",
+              gold: "#D6B779",
+              ink: "#30262B",
+            },
+            fontFamily: {
+              display: ['"Cormorant Garamond"', "serif"],
+              body: ["Jost", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Glow & Grace Salon",
+        "url": "https://YOUR-USERNAME.github.io/glow-grace-salon/",
+        "description": "Demo beauty salon website. Replace with verified business details."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I book?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tap any WhatsApp button. A message with your chosen service opens, and the salon replies with available dates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the prices final?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. These are demo prices. The salon confirms prices based on hair length, package and your requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book a bridal trial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ask about a consultation or trial when you message. Availability is arranged on WhatsApp."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-ivory font-body text-ink antialiased">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:bg-white focus:p-3"
+      >Skip to content</a
+    >
+    <header
+      class="sticky top-0 z-40 border-b border-gold/50 bg-ivory/95 backdrop-blur"
+    >
+      <nav
+        aria-label="Main"
+        class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5"
+      >
+        <a
+          href="index.html"
+          class="font-display text-2xl font-semibold text-plum"
+          >Glow &amp; Grace Salon</a
+        >
+        <button
+          id="burger"
+          class="p-3 md:hidden"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Toggle menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </button>
+        <ul
+          id="menu"
+          class="menu absolute inset-x-0 top-16 hidden flex-col gap-4 border-b border-gold/50 bg-ivory p-5 md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0"
+        >
+          <li>
+            <a href="index.html" class="navlink text-sm" aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li><a href="about.html" class="navlink text-sm">About</a></li>
+          <li><a href="services.html" class="navlink text-sm">Services</a></li>
+          <li>
+            <a href="gallery.html" class="navlink text-sm">Bridal Gallery</a>
+          </li>
+          <li><a href="contact.html" class="navlink text-sm">Contact</a></li>
+          <li>
+            <a
+              data-wa
+              href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn bg-plum text-ivory hover:bg-ink"
+              >Book Appointment</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section
+        class="mx-auto max-w-6xl px-5 grid items-center gap-12 py-14 md:grid-cols-[1.2fr_1fr] md:py-24"
+      >
+        <div class="rise">
+          <h1
+            class="font-display text-5xl leading-[1.05] text-plum md:text-7xl"
+          >
+            Your Beauty. Your Moment. Your Glow.
+          </h1>
+          <p class="mt-6 max-w-md text-lg leading-relaxed">
+            Discover personalized beauty treatments, flawless bridal makeup, and
+            luxurious self-care designed around you.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="services.html" class="btn bg-plum text-ivory hover:bg-ink"
+              >Explore Services</a
+            ><a
+              data-wa
+              href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn border border-plum text-plum hover:bg-blush"
+              >Book on WhatsApp</a
+            >
+          </div>
+        </div>
+        <div
+          role="img"
+          aria-label="Decorative arch in plum and blush. Replace with a bridal photograph."
+          class="mx-auto aspect-[3/4] w-full max-w-sm rounded-t-full border border-gold bg-gradient-to-b from-blush to-rose/60 p-3"
+        >
+          <div
+            class="flex h-full items-end justify-center rounded-t-full border border-gold/60 pb-10"
+          >
+            <p class="px-6 text-center font-display text-3xl italic text-plum">
+              Unhurried. Personal. Yours.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-blush py-16">
+        <div class="mx-auto max-w-6xl px-5">
+          <h2 class="font-display text-4xl text-plum">
+            A calm studio for your most important days
+          </h2>
+          <p class="mt-4 max-w-2xl">
+            Every booking starts with a conversation about your outfit, skin and
+            event.
+            <a class="underline" href="about.html">Read about our approach</a>.
+          </p>
+        </div>
+      </section>
+      <section class="mx-auto max-w-6xl px-5 py-20">
+        <h2 class="font-display text-4xl text-plum">Featured services</h2>
+        <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <li
+            class="reveal flex flex-col overflow-hidden rounded-lg border border-gold/60 bg-white"
+            data-cat="Bridal Makeup"
+          >
+            <div
+              class="zoom h-36"
+              style="background: linear-gradient(160deg, #e8b7b0, #b8924f)"
+              role="img"
+              aria-label="Decorative colour panel for Bridal Makeup. Replace with a photo."
+            ></div>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="font-display text-2xl text-plum">Bridal Makeup</h3>
+              <p class="mt-2 flex-1 text-sm">
+                Full bridal look with a consultation, skin prep and hair
+                setting.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="font-display text-xl">PKR 25,000</span
+                ><a
+                  data-wa
+                  data-service="Bridal Makeup"
+                  href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20Bridal%20Makeup%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn bg-plum text-ivory hover:bg-ink"
+                  aria-label="Book Bridal Makeup on WhatsApp"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </li>
+          <li
+            class="reveal flex flex-col overflow-hidden rounded-lg border border-gold/60 bg-white"
+            data-cat="Party Makeup"
+          >
+            <div
+              class="zoom h-36"
+              style="background: linear-gradient(160deg, #3a3331, #b8924f)"
+              role="img"
+              aria-label="Decorative colour panel for Party Makeup. Replace with a photo."
+            ></div>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="font-display text-2xl text-plum">Party Makeup</h3>
+              <p class="mt-2 flex-1 text-sm">
+                Polished makeup for dawats, weddings and evenings out.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="font-display text-xl">PKR 6,000</span
+                ><a
+                  data-wa
+                  data-service="Party Makeup"
+                  href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20Party%20Makeup%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn bg-plum text-ivory hover:bg-ink"
+                  aria-label="Book Party Makeup on WhatsApp"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </li>
+          <li
+            class="reveal flex flex-col overflow-hidden rounded-lg border border-gold/60 bg-white"
+            data-cat="Hair Services"
+          >
+            <div
+              class="zoom h-36"
+              style="background: linear-gradient(160deg, #f3d6d2, #c9b6d9)"
+              role="img"
+              aria-label="Decorative colour panel for Hair Treatment. Replace with a photo."
+            ></div>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="font-display text-2xl text-plum">Hair Treatment</h3>
+              <p class="mt-2 flex-1 text-sm">
+                Deep conditioning and repair for dry or damaged hair.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="font-display text-xl">PKR 3,500</span
+                ><a
+                  data-wa
+                  data-service="Hair Treatment"
+                  href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20Hair%20Treatment%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn bg-plum text-ivory hover:bg-ink"
+                  aria-label="Book Hair Treatment on WhatsApp"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </li>
+          <li
+            class="reveal flex flex-col overflow-hidden rounded-lg border border-gold/60 bg-white"
+            data-cat="Skin & Beauty"
+          >
+            <div
+              class="zoom h-36"
+              style="background: linear-gradient(160deg, #f7e8ec, #d6b779)"
+              role="img"
+              aria-label="Decorative colour panel for Facial. Replace with a photo."
+            ></div>
+            <div class="flex flex-1 flex-col p-5">
+              <h3 class="font-display text-2xl text-plum">Facial</h3>
+              <p class="mt-2 flex-1 text-sm">
+                Cleansing facial matched to your skin type.
+              </p>
+              <div class="mt-4 flex items-center justify-between">
+                <span class="font-display text-xl">PKR 2,500</span
+                ><a
+                  data-wa
+                  data-service="Facial"
+                  href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20Facial%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn bg-plum text-ivory hover:bg-ink"
+                  aria-label="Book Facial on WhatsApp"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a class="mt-8 inline-block underline" href="services.html"
+          >See all services and prices</a
+        >
+        <p class="mt-8 text-sm">
+          Prices are illustrative demo prices and must be confirmed with the
+          salon. Clicking WhatsApp opens a message to the salon; your booking is
+          only arranged once they reply.
+        </p>
+      </section>
+      <section class="bg-plum py-20 text-ivory">
+        <div class="mx-auto max-w-6xl px-5">
+          <h2 class="font-display text-4xl">Bridal looks for every event</h2>
+          <p class="mt-3 max-w-xl">
+            Nikkah, mehndi, barat and walima looks, with hairstyles to match.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="gallery.html" class="btn bg-gold text-ink"
+              >View the Bridal Gallery</a
+            ><a href="bridal-makeup.html" class="btn border border-ivory"
+              >Bridal makeup details</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="mx-auto max-w-6xl px-5 py-20">
+        <h2 class="font-display text-4xl text-plum">Why choose us</h2>
+        <ul class="mt-6 grid gap-6 md:grid-cols-3">
+          <li class="reveal border-l-2 border-gold pl-4">
+            <h3 class="font-display text-2xl text-plum">Consultation first</h3>
+            <p class="mt-1 text-sm">
+              We plan your look around your outfit, skin and event.
+            </p>
+          </li>
+          <li class="reveal border-l-2 border-gold pl-4">
+            <h3 class="font-display text-2xl text-plum">Clean tools</h3>
+            <p class="mt-1 text-sm">Sanitised tools and quality products.</p>
+          </li>
+          <li class="reveal border-l-2 border-gold pl-4">
+            <h3 class="font-display text-2xl text-plum">Personal attention</h3>
+            <p class="mt-1 text-sm">
+              Appointments are planned so you are not rushed.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="bg-blush py-20">
+        <div class="mx-auto max-w-6xl px-5">
+          <h2 class="font-display text-4xl text-plum">Kind words</h2>
+          <p class="mt-2 text-sm">
+            Sample testimonials for this demo, not verified reviews.
+          </p>
+          <div class="mt-8 grid gap-5 md:grid-cols-3">
+            <blockquote class="reveal rounded-lg bg-white p-6">
+              <p>My makeup stayed fresh from nikkah to walima.</p>
+              <footer class="mt-3 text-sm text-plum">Ayesha R. (sample)</footer>
+            </blockquote>
+            <blockquote class="reveal rounded-lg bg-white p-6">
+              <p>They listened to what I wanted for my hair colour.</p>
+              <footer class="mt-3 text-sm text-plum">Hira M. (sample)</footer>
+            </blockquote>
+            <blockquote class="reveal rounded-lg bg-white p-6">
+              <p>Calm, clean and on time for my facial.</p>
+              <footer class="mt-3 text-sm text-plum">Sana K. (sample)</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+      <section class="mx-auto max-w-6xl px-5 py-20">
+        <h2 class="font-display text-4xl text-plum">Questions</h2>
+        <div class="mt-6 space-y-3">
+          <details class="rounded-lg border border-gold/60 bg-white p-4">
+            <summary class="cursor-pointer font-medium">How do I book?</summary>
+            <p class="mt-2 text-sm">
+              Tap any WhatsApp button. A message with your chosen service opens,
+              and the salon replies with available dates.
+            </p>
+          </details>
+          <details class="rounded-lg border border-gold/60 bg-white p-4">
+            <summary class="cursor-pointer font-medium">
+              Are the prices final?
+            </summary>
+            <p class="mt-2 text-sm">
+              No. These are demo prices. The salon confirms prices based on hair
+              length, package and your requirements.
+            </p>
+          </details>
+          <details class="rounded-lg border border-gold/60 bg-white p-4">
+            <summary class="cursor-pointer font-medium">
+              Can I book a bridal trial?
+            </summary>
+            <p class="mt-2 text-sm">
+              Ask about a consultation or trial when you message. Availability
+              is arranged on WhatsApp.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="bg-plum py-20 text-center text-ivory">
+        <h2 class="font-display text-4xl">Your Perfect Look Starts Here.</h2>
+        <div class="mt-8 flex justify-center gap-3">
+          <a
+            data-wa
+            href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn bg-gold text-ink"
+            >Book on WhatsApp</a
+          ><a href="contact.html" class="btn border border-ivory">Contact us</a>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-plum py-12 text-ivory">
+      <div class="mx-auto grid max-w-6xl gap-8 px-5 text-sm sm:grid-cols-3">
+        <div>
+          <p class="font-display text-2xl">Glow &amp; Grace Salon</p>
+          <p class="mt-2">Demo website. Not an existing business.</p>
+          <p class="mt-2">
+            Address: [add real address], Lahore, Pakistan<br />Phone: [add real
+            phone]
+          </p>
+        </div>
+        <ul class="space-y-2">
+          <li><a href="services.html">Services &amp; Prices</a></li>
+          <li><a href="bridal-makeup.html">Bridal Makeup</a></li>
+          <li><a href="gallery.html">Bridal Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+        <ul class="space-y-2">
+          <li>
+            <a
+              data-wa
+              href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline"
+              >WhatsApp</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="underline"
+              >Instagram [add handle]</a
+            >
+          </li>
+          <li>
+            &copy; <span id="year">2026</span> Glow &amp; Grace Salon (demo)
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a
+      data-wa
+      href="https://wa.me/923001234567?text=Assalam-o-Alaikum%21%20I%20would%20like%20to%20book%20an%20appointment%20at%20Glow%20%26%20Grace%20Salon.%20Please%20share%20your%20available%20dates%20and%20timings."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      class="fixed bottom-5 right-5 z-40 rounded-full bg-[#1f7a4d] px-5 py-3 text-sm text-white shadow-lg hover:bg-[#17603c]"
+      >WhatsApp</a
+    >
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

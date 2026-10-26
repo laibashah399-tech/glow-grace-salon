@@ -1,0 +1,16 @@
+.rise{animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.btn{display:inline-block;border-radius:9999px;padding:.7rem 1.3rem;font-size:.9rem;transition:background-color .2s,color .2s}
+.navlink{position:relative;padding-bottom:.25rem}
+.navlink::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:#542344;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.navlink:hover::after,.navlink[aria-current=page]::after{transform:scaleX(1)}
+.zoom{transition:transform .5s ease}.zoom:hover{transform:scale(1.03)}
+.fbtn[aria-pressed=true]{background:#542344;color:#FFF9F5;border-color:#542344}
+.menu.open{display:flex}
+dialog[open]{animation:rise .3s ease both}
+label{font-size:.9rem}
+:focus-visible{outline:2px solid #542344;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*,.rise,.reveal{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+html{scroll-behavior:smooth}
